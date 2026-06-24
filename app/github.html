@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/png" />
+    <title>Guía de Git y GitHub</title>
+    <meta name="author" content="Sebastian Monsalve" />
+    <meta
+      name="description"
+      content="Guía completa sobre la estructura del proyecto y los comandos iniciales de Git y GitHub para ADSO."
+    />
+    <meta name="keywords" content="Taller 3 bootstrap" />
+    <meta name="theme-color" content="#1f4ea8" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid p-0">
+      <header class="sticky-top bg-dark">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" aria-label="Página de inicio">
+              <img
+                src="../assets/img/logo1.png"
+                alt="Logo del sitio"
+                width="40"
+                height="40"
+                class="rounded-pill"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"
+                    ><i class="bi bi-house"></i> Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="bi bi-bank"></i> Módulo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/sebas17-code/Taller3bootstrap"
+                    ><i class="bi bi-github"></i>GitHub R</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >Menú</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="tables.html">Tablas</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="github.html">GitHub</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div>
+                <a
+                  href="../"
+                  class="btn btn-primary btn-lg"
+                  style="font-size: 20px"
+                >
+                  <i class="bi bi-arrow-bar-right"></i>Salir
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="bg-dark py-3">
+        <div class="container text-white">
+          <h1 class="text-center m-0">Guia Github ADSO</h1>
+        </div>
+      </main>
+
+      <div class="container my-4">
+        <div class="mb-4">
+          <div class="bg-dark text-white p-2">
+            <h2 class="fs-5 m-0">1. Estructura</h2>
+          </div>
+          <div class="bg-white p-3 border border-top-0">
+            <p class="mb-0">
+              El proyecto tiene una estructura organizada para un sitio web de
+              varias paginas:
+            </p>
+          </div>
+          <div class="bg-black text-white p-3 font-monospace">
+            <pre class="m-0">
+taller3/
+├── app/
+│   ├── forms.html
+│   ├── tables.html
+│   └── github.html
+│
+├── assets/
+│   ├── css/
+│   ├── img/
+│   └── js/
+│
+├── index.html
+└── README.md</pre
+            >
+          </div>
+          <div class="table-responsive">
+            <table class="table table-bordered m-0">
+              <thead class="table-dark">
+                <tr>
+                  <th style="width: 30%">Elemento</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-monospace text-danger">app/forms.html</td>
+                  <td>Página destinada a formularios</td>
+                </tr>
+                <tr>
+                  <td class="font-monospace text-danger">app/tables.html</td>
+                  <td>Página destinada a tablas</td>
+                </tr>
+                <tr>
+                  <td class="font-monospace text-danger">app/github.html</td>
+                  <td>
+                    Página destinada a la información guía para el manejo en
+                    GitHub.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-monospace text-danger">app/assets/css</td>
+                  <td>
+                    Carpeta para archivos de estilos CSS, si el proyecto los
+                    requiere.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-monospace text-danger">app/assets/img</td>
+                  <td>Carpeta para imágenes del proyecto</td>
+                </tr>
+                <tr>
+                  <td class="font-monospace text-danger">app/assets/js</td>
+                  <td>Carpeta para archivos JavaScript.</td>
+                </tr>
+                <tr>
+                  <td class="font-monospace text-danger">README.md</td>
+                  <td>Archivo README con documentación.</td>
+                </tr>
+                <tr>
+                  <td class="font-monospace text-danger">index.html</td>
+                  <td>Página principal del proyecto.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="bg-dark text-white text-center mb-4 p-2 fw-bold">
+          nota: esta guía es solo bootstrap para diseño Visual
+        </div>
+
+        <div class="mb-4">
+          <div class="bg-dark text-white p-2">
+            <h2 class="fs-5 m-0">2. Requisitos iniciales</h2>
+          </div>
+          <div class="bg-white p-3 border border-top-0">
+            <ul>
+              <li>Tener una cuenta activa en GitHub.</li>
+              <li>Tener instalado Git en el computador.</li>
+              <li>Tener instalado Visual Studio Code.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <div class="bg-dark text-white p-2">
+            <h2 class="fs-5 m-0">
+              3. Configuración de Git desde Visual Studio Code
+            </h2>
+          </div>
+          <div class="bg-white p-3 border border-top-0">
+            <p>Abre la terminal integrada de Visual Studio Code:</p>
+            <p class="font-monospace bg-light p-2 border">
+              Menú: Terminal &rarr; New Terminal
+            </p>
+            <p>
+              Configura tu nombre y correo a nivel global de forma obligatoria:
+            </p>
+            <div class="bg-black text-white p-3 font-monospace">
+              git config --global user.name "Tu Nombre"<br />
+              git config --global user.email "tu_correo@email.com"
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <div class="bg-dark text-white p-2">
+            <h2 class="fs-5 m-0">4. Inicializar Git en el proyecto</h2>
+          </div>
+          <div class="bg-white p-3 border border-top-0">
+            <p>
+              Ubícate en la carpeta raíz del proyecto, donde está el archivo
+              index.html, y ejecuta:
+            </p>
+            <div class="bg-black text-white p-3 font-monospace mb-3">
+              git init<br />
+              git add .<br />
+              git commit -m "Primer commit"
+            </div>
+            <p class="mb-0">
+              <strong>Nota:</strong> Este primer commit guarda la versión
+              inicial del proyecto, incluyendo index.html, forms.html,
+              tables.html y assets.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <div class="bg-dark text-white p-2">
+            <h2 class="fs-5 m-0">5. Crear repositorio en GitHub</h2>
+          </div>
+          <div class="bg-white p-3 border border-top-0">
+            <ol>
+              <li>Ingresar a GitHub.</li>
+              <li>Hacer clic en el botón New repository.</li>
+              <li>
+                Asignar un nombre al repositorio, por ejemplo:
+                proyecto-bootstrap-adso.
+              </li>
+              <li>Seleccionar si el repositorio será público o privado.</li>
+              <li>
+                Hacer clic en el botón inferior Create repository sin agregar
+                archivo README si ya tienes código local.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <div class="bg-dark text-white p-2">
+            <h2 class="fs-5 m-0">6. Conectar proyecto local con GitHub</h2>
+          </div>
+          <div class="bg-white p-3 border border-top-0">
+            <p>
+              Copia la URL segura del repositorio creado en tu plataforma de
+              GitHub y ejecuta:
+            </p>
+            <div class="bg-black text-white p-3 font-monospace mb-3">
+              git remote add origin
+              https://github.com/usuario/proyecto-bootstrap-adso.git<br />
+              git branch -M main<br />
+              git push -u origin main
+            </div>
+            <p class="mb-0 text-secondary">
+              Importante: Recuerda cambiar usuario y proyecto-bootstrap-adso por
+              tus datos reales de la cuenta de GitHub.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p class="mb-0">
+          &copy; 2026 Taller 3 Bootstrap. Todos los derechos reservados.
+        </p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

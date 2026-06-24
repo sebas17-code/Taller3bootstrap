@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/png" />
+    <title>Tablas Bootstrap - Consulta Clientes</title>
+    <meta name="author" content="Sebastian Monsalve" />
+    <meta
+      name="description"
+      content="Tabla estructurada con Bootstrap para la gestión y consulta de datos de clientes corporativos."
+    />
+    <meta name="keywords" content="Taller 3 bootstrap" />
+    <meta name="theme-color" content="#" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="sticky-top bg-dark">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" aria-label="Página de inicio">
+              <img
+                src="../assets/img/logo1.png"
+                alt="Logo del sitio"
+                width="40"
+                height="40"
+                class="rounded-pill"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"
+                    ><i class="bi bi-house"></i> Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="bi bi-bank"></i> Módulo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/sebas17-code/Taller3bootstrap"
+                    ><i class="bi bi-github"></i>GitHub R</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >Menú</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="tables.html">Tablas</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="github.html">GitHub</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div>
+                <a
+                  href="../"
+                  class="btn btn-primary btn-lg"
+                  style="font-size: 20px"
+                >
+                  <i class="bi bi-arrow-bar-right"></i>Salir
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container mt-4 mb-4 text-center">
+        <div class="d-flex justify-content-center gap-2 mb-3">
+          <button type="button" class="btn btn-primary btn-sm">
+            Generar Reporte Completo
+          </button>
+          <button type="button" class="btn btn-light border btn-sm">
+            Reajustar Tabla
+          </button>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            <h1 class="fw-bold mb-2 fs-2">Resumen de Tabla de Clientes</h1>
+            <p class="text-secondary mx-auto mb-3" style="max-width: 750px">
+              Explore, ordene y exporte los datos detallados de todos los
+              clientes premium y empresariales para el periodo actual de
+              facturación.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center gap-2 mt-3">
+          <button type="button" class="btn btn-primary">
+            Generar Reporte Completo
+          </button>
+          <button type="button" class="btn btn-light border">
+            Reajustar Tabla
+          </button>
+        </div>
+      </div>
+      <hr class="my-4 text-secondary" />
+
+      <div class="container mt-3">
+        <h2>Tabla</h2>
+        <p>Tabla Clientes</p>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm">
+            <thead class="table-dark">
+              <tr>
+                <th>ID Cliente</th>
+                <th>Nombre Completo</th>
+                <th>Correo Electrónico</th>
+                <th>Pais</th>
+                <th>Plan</th>
+                <th>Monto</th>
+                <th>Fecha registro</th>
+                <th>Último acceso</th>
+                <th>Soporte VIP</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CLI-101</td>
+                <td>Carlos Mendoza</td>
+                <td>carlos.mendoza@mail.com</td>
+                <td>México</td>
+                <td>Premium</td>
+                <td>$49.99</td>
+                <td>2026-01-10</td>
+                <td>Hoy</td>
+                <td>Sí</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-102</td>
+                <td>Ana María Silva</td>
+                <td>ana.silva@mail.com</td>
+                <td>Colombia</td>
+                <td>Básico</td>
+                <td>$14.99</td>
+                <td>2026-01-12</td>
+                <td>Ayer</td>
+                <td>No</td>
+                <td>Inactivo</td>
+              </tr>
+              <tr>
+                <td>CLI-103</td>
+                <td>Jorge Luis Ortega</td>
+                <td>jorge.ortega@mail.com</td>
+                <td>Argentina</td>
+                <td>Estándar</td>
+                <td>$29.99</td>
+                <td>2026-01-15</td>
+                <td>Hace 3 días</td>
+                <td>No</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-104</td>
+                <td>Laura Sofia Castro</td>
+                <td>laura.castro@mail.com</td>
+                <td>Chile</td>
+                <td>Premium</td>
+                <td>$49.99</td>
+                <td>2026-01-18</td>
+                <td>Hoy</td>
+                <td>Sí</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-105</td>
+                <td>Miguel Ángel Torres</td>
+                <td>miguel.torres@mail.com</td>
+                <td>Perú</td>
+                <td>Básico</td>
+                <td>$14.99</td>
+                <td>2026-01-20</td>
+                <td>Hace 5 días</td>
+                <td>No</td>
+                <td>Inactivo</td>
+              </tr>
+              <tr>
+                <td>CLI-106</td>
+                <td>Elena Rostova</td>
+                <td>elena.rostova@mail.com</td>
+                <td>España</td>
+                <td>Enterprise</td>
+                <td>$199.99</td>
+                <td>2026-01-22</td>
+                <td>Hoy</td>
+                <td>Sí</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-107</td>
+                <td>David Alejandro Ruiz</td>
+                <td>david.ruiz@mail.com</td>
+                <td>Colombia</td>
+                <td>Estándar</td>
+                <td>$29.99</td>
+                <td>2026-01-25</td>
+                <td>Ayer</td>
+                <td>No</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-108</td>
+                <td>Lucía Fernanda Gómez</td>
+                <td>lucia.gomez@mail.com</td>
+                <td>México</td>
+                <td>Premium</td>
+                <td>$49.99</td>
+                <td>2026-01-28</td>
+                <td>Hace 2 días</td>
+                <td>Sí</td>
+                <td>Suspendido</td>
+              </tr>
+              <tr>
+                <td>CLI-109</td>
+                <td>Andrés Felipe Marín</td>
+                <td>andres.marin@mail.com</td>
+                <td>Ecuador</td>
+                <td>Básico</td>
+                <td>$14.99</td>
+                <td>2026-02-02</td>
+                <td>Hace 1 semana</td>
+                <td>No</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-110</td>
+                <td>Claudia Patricia Peña</td>
+                <td>claudia.pena@mail.com</td>
+                <td>Venezuela</td>
+                <td>Estándar</td>
+                <td>$29.99</td>
+                <td>2026-02-05</td>
+                <td>Hoy</td>
+                <td>No</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-111</td>
+                <td>Santiago José Vegas</td>
+                <td>santiago.vegas@mail.com</td>
+                <td>Colombia</td>
+                <td>Premium</td>
+                <td>$49.99</td>
+                <td>2026-02-08</td>
+                <td>Ayer</td>
+                <td>Sí</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-112</td>
+                <td>Natalia Isabel Ríos</td>
+                <td>natalia.rios@mail.com</td>
+                <td>Chile</td>
+                <td>Básico</td>
+                <td>$14.99</td>
+                <td>2026-02-10</td>
+                <td>Hace 4 días</td>
+                <td>No</td>
+                <td>Inactivo</td>
+              </tr>
+              <tr>
+                <td>CLI-113</td>
+                <td>Juan Camilo Ospina</td>
+                <td>juan.ospina@mail.com</td>
+                <td>Perú</td>
+                <td>Estándar</td>
+                <td>$29.99</td>
+                <td>2026-02-12</td>
+                <td>Hoy</td>
+                <td>No</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-114</td>
+                <td>Diana Marcela Duque</td>
+                <td>diana.duque@mail.com</td>
+                <td>México</td>
+                <td>Enterprise</td>
+                <td>$199.99</td>
+                <td>2026-02-15</td>
+                <td>Hoy</td>
+                <td>Sí</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-115</td>
+                <td>Ricardo Antonio Soler</td>
+                <td>ricardo.soler@mail.com</td>
+                <td>Argentina</td>
+                <td>Premium</td>
+                <td>$49.99</td>
+                <td>2026-02-18</td>
+                <td>Hace 3 días</td>
+                <td>Sí</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-116</td>
+                <td>Valeria Valentina Cruz</td>
+                <td>valeria.cruz@mail.com</td>
+                <td>España</td>
+                <td>Básico</td>
+                <td>$14.99</td>
+                <td>2026-02-20</td>
+                <td>Hace 6 días</td>
+                <td>No</td>
+                <td>Inactivo</td>
+              </tr>
+              <tr>
+                <td>CLI-117</td>
+                <td>Mauricio Alberto Franco</td>
+                <td>mauricio.franco@mail.com</td>
+                <td>Colombia</td>
+                <td>Estándar</td>
+                <td>$29.99</td>
+                <td>2026-02-22</td>
+                <td>Ayer</td>
+                <td>No</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-118</td>
+                <td>Gabriela Alejandra Suárez</td>
+                <td>gabriela.suarez@mail.com</td>
+                <td>México</td>
+                <td>Premium</td>
+                <td>$49.99</td>
+                <td>2026-02-25</td>
+                <td>Hoy</td>
+                <td>Sí</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-119</td>
+                <td>Oscar Eduardo Méndez</td>
+                <td>oscar.mendez@mail.com</td>
+                <td>Chile</td>
+                <td>Básico</td>
+                <td>$14.99</td>
+                <td>2026-02-28</td>
+                <td>Hace 2 días</td>
+                <td>No</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>CLI-120</td>
+                <td>Paola Andrea Villa</td>
+                <td>paola.villa@mail.com</td>
+                <td>Ecuador</td>
+                <td>Enterprise</td>
+                <td>$199.99</td>
+                <td>2026-03-02</td>
+                <td>Hoy</td>
+                <td>Sí</td>
+                <td>Activo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white text-center p-3">
+      <p class="m-0">
+        Sebastian Monsalve Taller 3 bootstrap. Todos los derechos
+        reservados&copy; 2026.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
