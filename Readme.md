@@ -1,7 +1,8 @@
 Taller 3: Maquetación Web con Bootstrap 🚀
 ​¡Bienvenido al repositorio del Taller 3! Este proyecto consiste en un sitio web multipágina completamente responsivo diseñado y estructurado utilizando el framework Bootstrap 5, aplicando buenas prácticas de maquetación visual adaptada a diferentes dispositivos.
 ​📂 Estructura del Proyecto
-​El sitio web mantiene la siguiente organización de carpetas y archivos locales:  taller3/
+​El sitio web mantiene la siguiente organización de carpetas y archivos locales:  
+taller3/
 ├── app/
 │   ├── forms.html       # Formularios de Registro e Inicio de Sesión
 │   ├── tables.html      # Tabla de Gestión y Consulta de Clientes
